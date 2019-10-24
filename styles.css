@@ -106,3 +106,77 @@ header#main-header .side button{
     justify-content: center;
     color: #fff;
 }
+
+.bar {
+    height: 59px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+.bar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 285px;
+    height: 100%;
+}
+
+.bar .content ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+
+.bar .content ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.bar .content ul li.active::after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3bb9e3;
+}
+
+.bar .content ul li span{
+    color: #667580;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bar .content ul li strong {
+    color: #667580;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.bar .content ul li.active strong {
+    color: #3bb9e3;
+}
+
+.bar .content .actions button {
+    border: 1px solid #3bb9e3;
+    color: #3bb9e3;
+    height: 34px;
+    width: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+.bar .content .actions {
+    display: flex;
+}
