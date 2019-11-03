@@ -185,7 +185,7 @@ header#main-header .side button{
     display: flex;
 }
 
-.wrapper-content .profile {
+.wrapper-content aside.profile {
     width: 260px;
     transform: translateY(-130px);
 }
@@ -282,4 +282,116 @@ header#main-header .side button{
     border-radius: 8px;
     flex: 1 0 auto;
     margin: 0 5px 5px 0;
+}
+
+.wrapper-content .timeline {
+    flex: 1;
+}
+
+.wrapper-content .widgets {
+    width: 290px;
+}
+
+.wrapper-content .widgets .widget {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.wrapper-content .widgets .widget .title{
+    display: flex;
+    align-items: baseline;
+}
+
+.wrapper-content .widgets .widget .title strong{
+    font-size: 18px;
+    color: #1f2226; 
+}
+
+.wrapper-content .widgets .widget .title a{
+    font-size: 12px;
+    color: #3bb9e3; 
+    text-decoration: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+.wrapper-content .widgets .widget .title a:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background: #222;
+    margin-left: 5px;
+    margin-right: 5px;
+    left: 0;
+    top: 6px;
+}
+
+.wrapper-content .widgets .follow ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.wrapper-content .widgets .follow ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccd6dd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper-content .widgets .follow ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.wrapper-content .widgets .follow ul li .profile{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-content .widgets .follow ul li .profile img{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.wrapper-content .widgets .follow ul li .profile .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-content .widgets .follow ul li .profile .info strong {
+    font-size: 14px;
+    color: #1f2326;
+}
+
+.wrapper-content .widgets .follow ul li .profile .info strong span {
+    font-weight: bold;
+    color: #9a9a9a;
+}
+
+.wrapper-content .widgets .follow ul li .profile .info button {
+    border: 1px solid #3bb9e3;
+    color: #3bb9e3;
+    height: 27px;
+    width: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 16px;
+    margin-top: 4px;
+}
+
+.wrapper-content .widgets .follow ul li > a {
+    color: #ccd6dd;
+    text-decoration: none;
+    font-size: 16px;
 }
